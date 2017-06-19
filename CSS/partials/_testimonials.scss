@@ -1,0 +1,28 @@
+.testimonials {
+	padding: 100px 30px;
+	text-align: center;
+	i {
+		font-size: 50px;
+		color: #e0e0e0;
+	}
+	.cell-title {
+		color: black;
+		margin-top: 50px;
+		font-weight: 700;
+	}
+	.cell-description {
+		color: $secondaryColor;
+		font-weight: 700;
+		margin-bottom: 50px;
+	}
+}
+
+.testimonials {
+	.bold {
+		margin-top: 65px;
+	}
+}
+
+.carousel-cell {
+	width: 100%;
+}

@@ -1,0 +1,142 @@
+header {
+	height: 100vh;
+	background: linear-gradient(rgba(0,0,0, 0.6),rgba(0, 0, 0, 0.6)), url(../assets/hero.jpg);
+	background-position: center center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+
+header nav {
+	display: flex;
+	justify-content: space-between;
+	.logo {
+		max-width: 110px;
+		
+	}
+	.nav-links {
+		list-style: none;
+			li {
+				margin-right: 35px;
+				display: inline-block;
+				a {
+					text-decoration: none;
+					font-size: 12px;						
+					color: $primaryColor;
+					font-family: $primaryFont;
+					padding-bottom: 4px;
+					text-transform: uppercase;						
+				}	
+			}
+			li:last-of-type {
+				margin-right: 0px;
+			}
+		}
+	}
+
+.header-text {
+	height: 91vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+// Hamburger Menu styles
+
+.overlay.menu {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.8);
+	margin: 15px;
+	color: white;
+}
+
+.overlay ul {
+	flex-direction: column;
+}
+.overlay ul a {
+	font-size: 30px;
+	text-align: center;
+	width: 100%;
+	padding: 30px;
+}
+
+.overlay .hamburger {
+	display: block;
+	font-size: 50px;
+	text-align: center;
+}
+
+.hamburger {
+	display: none;
+}
+
+.logo2 {
+	display: none;
+}
+
+.overlay .logo {
+	display: none;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	header {
+		align-items: center;
+		padding: 15px;
+		flex-direction: column;
+	}
+	.hamburger {
+		display: block;
+		font-size: 30px;
+		color: white;
+		margin-bottom: 10px;
+		margin-top: 0;
+	}
+
+	.logo {
+		max-width: 200px;
+		align-self: center;
+	}
+
+	.nav-links {
+		display: none;
+	}
+	
+	.menu ul.show {
+		display: flex;
+		padding: 0;
+
+	}
+
+	.menu ul.show li {
+		margin-right: 0;
+	}
+
+	.menu ul.show a {
+		font-size: 30px;
+		padding-top: 10px;
+		line-height: 40px;
+	}
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	h1 {
+		text-align: center;
+		font-size: 25px;
+		line-height: 40px;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}
+

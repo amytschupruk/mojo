@@ -1,0 +1,147 @@
+.services-title {
+	background: url(../assets/bg.jpg);
+	background-position: center center;
+	background-repeat: repeat;
+	padding-bottom: 100px;
+	h2 {
+		margin-bottom: 0;
+	}
+}
+
+.services-gallery__cell--img {
+	width: 50%;
+}
+
+.services-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	div {
+		width: 50%;
+	}
+	.services-gallery__cell--text {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		margin-bottom: 50px;
+		padding-left: 50px;
+		.text-number {
+			width: 20%;
+			.numbers {
+				font-size: 73px;
+				color: #d8d8d8;
+				font-family: $secondaryFont;
+				font-weight: 400;
+				text-align: right;
+				margin-right: 20px;
+				margin-top: 0;
+			}
+		}
+		.text-content {
+			h3 {
+				margin-top: 160px;
+				color: black;
+				font-weight: 700;
+				margin-top: 55px;
+				position: relative;
+				padding-bottom: 10px;
+			}
+			h3:after {
+				content: '';
+				width: 50px;
+				height: 1px;
+				background-color: $secondaryColor;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+			}
+			p {
+				max-width: 385px;
+			}	 
+			.button {
+				margin-top: 50px;
+			}
+			a {
+				color: black;
+				border: 1px solid black;
+			}
+		}
+	}	
+}
+
+.services-gallery__text2 {
+	align-self: flex-end;
+}
+
+.services-gallery__cell--img1 {
+	background: url(../assets/services-img1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.services-gallery__cell--img2 {
+	background: url(../assets/services-img2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.services-gallery__cell--img3 {
+	background: url(../assets/services-img3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.services-gallery__cell--text .text-content p {
+		padding: 20px;
+	}
+	.services-gallery .services-gallery__cell--text .text-content h3 {
+		margin-top: 20px;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.services-gallery .services-gallery__cell--text {
+		padding-left: 10px;
+	}
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	
+
+	.services-gallery div {
+	width: 100%;
+	}
+
+	.numbers {
+		display: none;
+	}
+
+
+	.text-content {
+		background: rgba(255, 255, 255, 0.5);
+		text-align: center;
+	}
+
+	.services-gallery .services-gallery__cell--text .text-content p {
+		margin-right: 0;
+		max-width: none;
+	}
+
+	.services-gallery .services-gallery__cell--text {
+		padding-right: 10px;
+	}
+
+	.services-gallery .services-gallery__cell--text .text-content h3:after {
+		left: 50%;
+   		transform: translate(-50%, -50%);
+	}
+
+
+}
